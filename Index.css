@@ -1,0 +1,74 @@
+* {
+  outline: none;
+  border: none;
+  color: #222222;
+  font-family: 'Poppins', sans-serif;
+  transition: background 1s, color 1s, font-size 1s, filter 1s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+br {
+  user-select: none;
+}
+
+body {
+  background: #DDDDDD;
+  padding: 2.5%;
+}
+
+div {
+  background: #DDDDDD80;
+  width: 95%;
+  border-radius: 15px;
+  padding: 15px;
+  filter: drop-shadow(0px 0px 15px #22222280);
+  text-align: center;
+}
+
+h1 {
+  font-size: 10vmin;
+  font-family: 'Rowdies', display, sans-serif;
+}
+
+span.Subtitle {
+  font-size: 24px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  font-size: 16px;
+  border-radius: 15px;
+  padding: 15px;
+  width: 25%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #22222280;
+}
+
+textarea {
+  max-width: 100%;
+}
+
+button {
+  border-radius: 15px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(calc(100% / 4) * 3);
+}
+
+button:active,
+button:focus {
+  filter: brightness(calc(100% / 3) * 2);
+}
