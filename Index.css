@@ -28,13 +28,33 @@ div {
   text-align: center;
 }
 
+div.Perspective {
+  text-align: left;
+}
+
+div.Perspective + div.Perspective {
+  margin-top: 2.5%;
+}
+
+div#InvalidPostMessage {
+  display: none;
+  background: #ff634780;
+  color: white;
+  width: 50%;
+  margin-left: 25%;
+}
+
 h1 {
   font-size: 10vmin;
-  font-family: 'Rowdies', display, sans-serif;
+  font-family: 'Unbounded', display, sans-serif;
 }
 
 span.Subtitle {
   font-size: 24px;
+}
+
+small {
+  color: #22222280;
 }
 
 label {
@@ -64,11 +84,16 @@ button {
   cursor: pointer;
 }
 
+input:hover,
 button:hover {
-  filter: brightness(calc(100% / 4) * 3);
+  filter: brightness(calc((100% / 4) * 3));
 }
 
+input:active,
+input:focus,
+textarea:active,
+textarea:focus,
 button:active,
 button:focus {
-  filter: brightness(calc(100% / 3) * 2);
+  filter: brightness(calc((100% / 3) * 2));
 }

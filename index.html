@@ -1,5 +1,5 @@
 
-<!-- EntitySearch is an application provided to you, by AR Nadal Verma! -->
+<!-- PerspectiveSpot is an application provided to you, by AR Nadal Verma! -->
 
 <!DOCTYPE html>
 
@@ -15,7 +15,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rowdies&family=Ranchers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Unbounded:wght@900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="Index.css" type="text/css">    
 
@@ -25,7 +25,7 @@
 
     <div id="MainContent">
 
-      <h1>PerspectiveSpot</h1>
+      <h1>PerspectiveSpot!</h1>
 
       <br>
 
@@ -43,6 +43,24 @@
       <br>
       <br>
 
+      <label>Email</label>
+
+      <br>
+
+      <input id="Email" type="email" placeholder="Your email address…"></input>
+
+      <br>
+      <br>
+
+      <label>Contact Number</label>
+
+      <br>
+
+      <input id="ContactNumber" type="tel" placeholder="Your phone or mobile number…"></input>
+
+      <br>
+      <br>
+
       <label>Comment</label>
 
       <br>
@@ -52,7 +70,29 @@
       <br>
       <br>
 
+      <small>The email address and the contact number will be anonymized and will not be public.</small>
+
+      <br>
+      <br>
+
       <button onclick="CreatePost()">Post!</button>
+
+      <br>
+      <br>
+
+      <div id="InvalidPostMessage" onclick="this.style.display = `none`">
+
+        To post, please fill in all the fields!
+
+      </div>
+
+    </div>
+
+    <br>
+
+    <div id="PerspectiveList">
+
+      <small id="NoPerspectiveFoundMessage">This spot is waiting for a perspective!</small>
 
     </div>
 
