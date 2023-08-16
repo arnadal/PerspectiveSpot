@@ -38,7 +38,7 @@
 
       <br>
 
-      <input placeholder="Represent yourself as…"></input>
+      <input id="Name" placeholder="Represent yourself as…"></input>
 
       <br>
       <br>
@@ -47,16 +47,21 @@
 
       <br>
 
-      <textarea placeholder="Your perspective and opinions…"></textarea>
+      <textarea id="Comment" placeholder="Your perspective and opinions…"></textarea>
 
       <br>
       <br>
 
-      <button onclick="Post()">Post!</button>
+      <button onclick="CreatePost()">Post!</button>
 
     </div>
 
-    
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+    <script src="Index.js"></script>
 
   </body>
 
