@@ -54,6 +54,12 @@ function CreatePost() {
     !Inputs.Comment.value
   ) return InvalidPost();
 
+  if (
+    !Inputs.Email.value.matches(/Incomplete/gim)
+  ) {
+    return InvalidPost(``);
+  }
+
   const NewPostKey = Database.ref(`Comments/`).push().key;
 
   Database.ref(`Comments/${NewPostKey}`).set({
